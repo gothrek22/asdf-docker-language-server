@@ -39,7 +39,7 @@ download_release() {
 	version="$1"
 	filename="$2"
 
-	url="$GH_REPO/archive/docker-language-server-linux-amd64-${version}"
+	url="$GH_REPO/archive/docker-language-server-linux-amd64-v${version}"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
